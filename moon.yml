@@ -1,0 +1,15 @@
+tasks:
+  dev:
+    command: "pnpm --parallel --filter=api --filter=client run dev"
+
+  api:dev:
+    command: "pnpm run --filter api dev"
+
+  client:dev:
+    command: "pnpm run --filter client dev"
+
+  lint:
+    command: "pnpm exec biome check"
+
+  lint:fix:
+    command: "pnpm exec biome check --write --unsafe"

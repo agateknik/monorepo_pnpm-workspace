@@ -1,0 +1,6 @@
+id: api
+language: javascript
+
+tasks:
+  dev:
+    command: "pnpm run dev"
